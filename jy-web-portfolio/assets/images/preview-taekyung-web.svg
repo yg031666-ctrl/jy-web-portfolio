@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Taekyung Materials web version preview</title>
+  <desc id="desc">Modern cream and gold corporate website mockup</desc>
+  <defs>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9f4ea"/><stop offset="1" stop-color="#efe2ca"/></linearGradient>
+    <linearGradient id="cable" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d0ae66"/><stop offset="1" stop-color="#6d4d20"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#fbfaf7"/>
+  <rect width="1600" height="92" fill="#fff"/>
+  <text x="72" y="56" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#8d672e">TAEKYUNG</text>
+  <text x="1020" y="55" font-family="Arial, sans-serif" font-size="14" letter-spacing="2" fill="#444">ABOUT  BUSINESS  NETWORK  CONTACT</text>
+  <rect y="92" width="1600" height="650" fill="url(#hero)"/>
+  <circle cx="1260" cy="415" r="315" fill="#fff" opacity=".58"/>
+  <g transform="translate(1030 215) rotate(-15 210 220)">
+    <circle cx="220" cy="225" r="190" fill="none" stroke="url(#cable)" stroke-width="54"/>
+    <circle cx="220" cy="225" r="110" fill="none" stroke="#f4e7cc" stroke-width="29"/>
+    <circle cx="220" cy="225" r="46" fill="#b88942"/>
+  </g>
+  <text x="92" y="268" font-family="Arial, sans-serif" font-size="17" letter-spacing="7" fill="#ad7f3d">CONNECTING THE FUTURE</text>
+  <text x="92" y="382" font-family="Arial, sans-serif" font-size="82" font-weight="800" fill="#2c2925">Powering</text>
+  <text x="92" y="468" font-family="Georgia, serif" font-size="88" font-style="italic" fill="#a67736">every connection.</text>
+  <text x="98" y="535" font-family="Arial, sans-serif" font-size="22" fill="#6f675e">전기 · 통신 · 태양광 자재를 하나의 네트워크로 연결합니다.</text>
+  <rect x="96" y="585" width="200" height="58" rx="29" fill="#2c2925"/>
+  <text x="141" y="621" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2" fill="#fff">EXPLORE ↗</text>
+  <rect y="742" width="1600" height="258" fill="#2c2925"/>
+  <text x="92" y="828" font-family="Arial, sans-serif" font-size="14" letter-spacing="5" fill="#d7b577">OUR EXPERTISE</text>
+  <text x="92" y="900" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#fff">Electricity</text>
+  <text x="470" y="900" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#fff">Communication</text>
+  <text x="1000" y="900" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#fff">Solar Energy</text>
+</svg>

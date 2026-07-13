@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Taekyung Materials Cafe24 website preview</title>
+  <desc id="desc">White and gold industrial corporate website mockup</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a8b4bd"/><stop offset="1" stop-color="#4f5c66"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d5b779"/><stop offset="1" stop-color="#9a7132"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#fff"/>
+  <rect width="1600" height="96" fill="#fff"/>
+  <circle cx="74" cy="48" r="26" fill="url(#gold)"/>
+  <text x="112" y="56" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#333">TAEKYUNG MATERIALS</text>
+  <text x="945" y="56" font-family="Arial, sans-serif" font-size="15" letter-spacing="2" fill="#4c4c4c">COMPANY  PRODUCT  TECHNOLOGY  SUPPORT</text>
+  <rect y="96" width="1600" height="660" fill="url(#sky)"/>
+  <path d="M0 620L310 450l210 92 240-230 245 168 240-255 355 260v271H0Z" fill="#303a42" opacity=".68"/>
+  <g opacity=".9">
+    <path d="M1050 238v355M960 330h180M998 408h105M920 593h255" stroke="#d7c095" stroke-width="7"/>
+    <path d="M1050 238l-90 92h180l-140 78h105l-185 185h255l-185-185h105l-135-78h180Z" fill="none" stroke="#d7c095" stroke-width="7"/>
+  </g>
+  <rect x="85" y="194" width="600" height="405" rx="4" fill="#fff" opacity=".92"/>
+  <text x="135" y="284" font-family="Arial, sans-serif" font-size="18" letter-spacing="5" fill="#9a7132">ELECTRIC · COMMUNICATION · SOLAR</text>
+  <text x="135" y="376" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#262626">미래 에너지를 연결하는</text>
+  <text x="135" y="452" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#262626">기술 파트너</text>
+  <text x="135" y="515" font-family="Arial, sans-serif" font-size="22" fill="#666">전기·통신·태양광 자재 전문 공급기업</text>
+  <rect x="135" y="550" width="170" height="48" fill="#b38a46"/>
+  <text x="171" y="581" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#fff">VIEW MORE ↗</text>
+  <rect y="756" width="1600" height="244" fill="#faf8f4"/>
+  <text x="85" y="840" font-family="Arial, sans-serif" font-size="15" letter-spacing="5" fill="#9a7132">BUSINESS AREA</text>
+  <text x="85" y="900" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#333">전기 · 통신 · 태양광</text>
+  <circle cx="1130" cy="875" r="72" fill="#d9c39b"/><circle cx="1310" cy="875" r="72" fill="#b7955c"/><circle cx="1490" cy="875" r="72" fill="#81663e"/>
+</svg>
