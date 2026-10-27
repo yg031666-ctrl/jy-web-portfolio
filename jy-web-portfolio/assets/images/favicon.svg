@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="2" fill="#fff8fa" />
+  <rect width="64" height="64" rx="2" fill="#08090c" />
   <text
     x="31"
     y="43"
     text-anchor="middle"
     font-family="Georgia,serif"
     font-size="36"
-    fill="#93576e"
+    fill="#f3f3f1"
     letter-spacing="-4"
   >
     JY
   </text>
-  <circle cx="51" cy="46" r="3" fill="#93576e" />
+  <circle cx="51" cy="46" r="3" fill="#f3f3f1" />
 </svg>

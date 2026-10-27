@@ -8,7 +8,7 @@
       name="description"
       content="An independent web design and development studio for corporate websites, brand experiences and e-commerce. Explore our work and discuss your next website with JY Studio."
     />
-    <meta name="theme-color" content="#fff8fa" />
+    <meta name="theme-color" content="#08090c" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="JY Studio — Let your brand stand out." />
     <meta
@@ -40,6 +40,13 @@
     <script defer src="script.js"></script>
   </head>
   <body>
+    <div class="cosmos-backdrop" aria-hidden="true">
+      <canvas id="cosmosCanvas"></canvas>
+    </div>
+    <div class="cosmic-cursor" aria-hidden="true">
+      <span class="cursor-dot"></span><span class="cursor-halo"></span>
+    </div>
+    <div class="cursor-trail" aria-hidden="true"></div>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="scroll-progress" aria-hidden="true"></div>
     <header class="site-header" id="siteHeader">
@@ -48,8 +55,8 @@
           >JY<span>STUDIO</span><i>.</i></a
         >
         <nav class="desktop-nav" aria-label="Main navigation">
-          <a href="#services">Services</a><a href="#about">Studio</a
-          ><a href="#work">Projects</a><a href="#process">Process</a>
+          <a href="#about">Studio</a><a href="#work">Projects</a
+          ><a href="#process">Process</a>
         </nav>
         <a class="header-cta" href="#contact"
           >Get in touch <span aria-hidden="true">↗</span></a
@@ -84,279 +91,12 @@
         aria-label="Mobile navigation"
         hidden=""
       >
-        <a href="#services">Services</a><a href="#about">Studio</a
-        ><a href="#work">Projects</a><a href="#process">Process</a
-        ><a href="#contact">Start a project ↗</a>
+        <a href="#about">Studio</a><a href="#work">Projects</a
+        ><a href="#process">Process</a><a href="#contact">Start a project ↗</a>
       </nav>
     </header>
     <main id="main">
       <section class="hero container" id="top" aria-labelledby="hero-title">
-        <div class="hero-petals" aria-hidden="true">
-          <span
-            class="petal"
-            style="
-              --x: 7%;
-              --duration: 9s;
-              --delay: -0s;
-              --drift: 24px;
-              --size: 5px;
-              --rotation: 0deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 44%;
-              --duration: 10s;
-              --delay: -0.63s;
-              --drift: -40px;
-              --size: 6px;
-              --rotation: 49deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 81%;
-              --duration: 11s;
-              --delay: -1.26s;
-              --drift: 56px;
-              --size: 7px;
-              --rotation: 98deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 18%;
-              --duration: 12s;
-              --delay: -1.89s;
-              --drift: -72px;
-              --size: 8px;
-              --rotation: 147deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 55%;
-              --duration: 13s;
-              --delay: -2.52s;
-              --drift: 88px;
-              --size: 9px;
-              --rotation: 196deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 92%;
-              --duration: 14s;
-              --delay: -3.15s;
-              --drift: -24px;
-              --size: 5px;
-              --rotation: 245deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 29%;
-              --duration: 15s;
-              --delay: -3.78s;
-              --drift: 40px;
-              --size: 6px;
-              --rotation: 294deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 66%;
-              --duration: 9s;
-              --delay: -4.41s;
-              --drift: -56px;
-              --size: 7px;
-              --rotation: 343deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 3%;
-              --duration: 10s;
-              --delay: -5.04s;
-              --drift: 72px;
-              --size: 8px;
-              --rotation: 392deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 40%;
-              --duration: 11s;
-              --delay: -5.67s;
-              --drift: -88px;
-              --size: 9px;
-              --rotation: 441deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 77%;
-              --duration: 12s;
-              --delay: -6.3s;
-              --drift: 24px;
-              --size: 5px;
-              --rotation: 490deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 14%;
-              --duration: 13s;
-              --delay: -6.93s;
-              --drift: -40px;
-              --size: 6px;
-              --rotation: 539deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 51%;
-              --duration: 14s;
-              --delay: -7.56s;
-              --drift: 56px;
-              --size: 7px;
-              --rotation: 588deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 88%;
-              --duration: 15s;
-              --delay: -8.19s;
-              --drift: -72px;
-              --size: 8px;
-              --rotation: 637deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 25%;
-              --duration: 9s;
-              --delay: -8.82s;
-              --drift: 88px;
-              --size: 9px;
-              --rotation: 686deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 62%;
-              --duration: 10s;
-              --delay: -9.45s;
-              --drift: -24px;
-              --size: 5px;
-              --rotation: 735deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 99%;
-              --duration: 11s;
-              --delay: -10.08s;
-              --drift: 40px;
-              --size: 6px;
-              --rotation: 784deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 36%;
-              --duration: 12s;
-              --delay: -10.71s;
-              --drift: -56px;
-              --size: 7px;
-              --rotation: 833deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 73%;
-              --duration: 13s;
-              --delay: -11.34s;
-              --drift: 72px;
-              --size: 8px;
-              --rotation: 882deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 10%;
-              --duration: 14s;
-              --delay: -11.97s;
-              --drift: -88px;
-              --size: 9px;
-              --rotation: 931deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 47%;
-              --duration: 15s;
-              --delay: -12.6s;
-              --drift: 24px;
-              --size: 5px;
-              --rotation: 980deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 84%;
-              --duration: 9s;
-              --delay: -13.23s;
-              --drift: -40px;
-              --size: 6px;
-              --rotation: 1029deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 21%;
-              --duration: 10s;
-              --delay: -13.86s;
-              --drift: 56px;
-              --size: 7px;
-              --rotation: 1078deg;
-            "
-          ></span
-          ><span
-            class="petal"
-            style="
-              --x: 58%;
-              --duration: 11s;
-              --delay: -14.49s;
-              --drift: -72px;
-              --size: 8px;
-              --rotation: 1127deg;
-            "
-          ></span>
-        </div>
         <div class="hero-topline">
           <span>INDEPENDENT WEB DESIGN &amp; DEVELOPMENT</span
           ><span>BRAND FIRST. DETAIL ALWAYS.</span>
@@ -399,12 +139,12 @@
             </div>
             <figure class="hero-editorial">
               <img
-                src="assets/images/studio-editorial.webp"
+                src="assets/images/studio-cosmos.webp"
                 width="1122"
                 height="1402"
                 fetchpriority="high"
                 decoding="async"
-                alt="An airy fashion portrait with ivory silk and a soft pink backdrop"
+                alt="White flowers and sculptural silk fabric against a black backdrop"
               />
             </figure>
             <div class="featured-project">
@@ -435,111 +175,9 @@
         </div>
         <div class="hero-bottom">
           <span>CORPORATE / E-COMMERCE / BRAND</span
-          ><a href="#services"
+          ><a href="#work"
             >What we can create together <span aria-hidden="true">↓</span></a
           >
-        </div>
-      </section>
-      <section
-        class="services section"
-        id="services"
-        aria-labelledby="services-title"
-      >
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">01 — WHAT WE DO</p>
-            <div>
-              <h2 id="services-title">
-                Clear in purpose.<br />Make your brand <em>distinctive.</em>
-              </h2>
-              <p>
-                Beyond beautiful screens, we create websites that help visitors
-                understand your business and take the next step.
-              </p>
-            </div>
-          </div>
-          <div class="service-grid">
-            <article class="service-item reveal">
-              <div class="service-image">
-                <img
-                  src="assets/images/NEXCORE.webp"
-                  width="1600"
-                  height="730"
-                  loading="lazy"
-                  decoding="async"
-                  alt="An existing portfolio website illustrating our corporate website design approach"
-                />
-              </div>
-              <div class="service-top">
-                <span>01</span>
-                <h3>Corporate Website</h3>
-              </div>
-              <h4>Corporate website design</h4>
-              <p>
-                We structure information to communicate your business and its
-                strengths clearly, with considered design and a clear path to
-                getting in touch.
-              </p>
-              <p class="service-scope">
-                Company profile · Business information · Inquiry flow
-              </p>
-            </article>
-            <article class="service-item reveal">
-              <div class="service-image">
-                <img
-                  src="assets/images/novera.webp"
-                  width="1600"
-                  height="719"
-                  loading="lazy"
-                  decoding="async"
-                  alt="NOVERA fashion website illustrating a visual direction for e-commerce"
-                />
-              </div>
-              <div class="service-top">
-                <span>02</span>
-                <h3>E-Commerce</h3>
-              </div>
-              <h4>Online store design</h4>
-              <p>
-                We put your products and brand at the heart of the shopping
-                experience. We discuss the scope you need, focusing on Cafe24
-                page design and front-end implementation.
-              </p>
-              <p class="service-scope">
-                Cafe24 · Product-led layouts · Responsive design
-              </p>
-            </article>
-            <article class="service-item reveal">
-              <div class="service-image">
-                <img
-                  src="assets/images/unform.webp"
-                  width="1600"
-                  height="900"
-                  loading="lazy"
-                  decoding="async"
-                  alt="UNFORM illustrating a visual direction for brand websites"
-                />
-              </div>
-              <div class="service-top">
-                <span>03</span>
-                <h3>Brand Website</h3>
-              </div>
-              <h4>Brand websites &amp; landing pages</h4>
-              <p>
-                We express your brand through imagery, language and the flow of
-                each page. From product introductions to campaigns, we turn
-                interest into a clear next step.
-              </p>
-              <p class="service-scope">
-                Brand stories · Campaigns · Landing pages
-              </p>
-            </article>
-          </div>
-          <p class="section-note">
-            Images from existing work illustrate our service approach. Payment,
-            membership, admin features and external integrations are scoped
-            individually during consultation.
-          </p>
         </div>
       </section>
       <section
