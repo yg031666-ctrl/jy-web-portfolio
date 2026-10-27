@@ -1230,6 +1230,17 @@ h2 {
     padding-inline: 20px;
   }
 }
+.btn.kakao-chat {
+  display: none;
+}
+@media (hover: none) and (pointer: coarse) {
+  .btn.kakao-channel {
+    display: none;
+  }
+  .btn.kakao-chat {
+    display: inline-flex;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
