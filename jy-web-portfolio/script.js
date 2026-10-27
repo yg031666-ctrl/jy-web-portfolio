@@ -118,3 +118,32 @@ function setupReveals() {
 }
 reducedMotion.addEventListener("change", setupReveals);
 setupReveals();
+
+// Animate decorative petals only while the hero is visible and motion is allowed.
+const hero = document.querySelector(".hero");
+let heroVisible = true;
+function updatePetals() {
+  hero.dataset.effects =
+    heroVisible && !document.hidden && !reducedMotion.matches
+      ? "active"
+      : "paused";
+}
+function measurePetalDistance() {
+  hero.style.setProperty("--fall-distance", `${hero.offsetHeight + 60}px`);
+}
+if ("IntersectionObserver" in window) {
+  const effectsObserver = new IntersectionObserver(([entry]) => {
+    heroVisible = entry.isIntersecting;
+    updatePetals();
+  });
+  effectsObserver.observe(hero);
+}
+if ("ResizeObserver" in window) {
+  new ResizeObserver(measurePetalDistance).observe(hero);
+} else {
+  window.addEventListener("resize", measurePetalDistance);
+}
+document.addEventListener("visibilitychange", updatePetals);
+reducedMotion.addEventListener("change", updatePetals);
+measurePetalDistance();
+updatePetals();
