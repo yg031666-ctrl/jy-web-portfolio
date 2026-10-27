@@ -1,30 +1,40 @@
-# JY Studio 웹 포트폴리오
+# JY Studio
 
-디지털 뮤지엄·브랜드·기업 웹사이트 프로젝트 5개를 소개하는 웹디자이너·웹 퍼블리셔 서지영의 반응형 포트폴리오입니다.
+기업 홈페이지·쇼핑몰·브랜드 웹사이트 제작을 소개하는 서지영의 1인 웹디자인·개발 스튜디오 사이트입니다. HTML, CSS, JavaScript만 사용하며 별도 패키지 설치나 빌드 단계는 없습니다.
 
-## 실행 방법
+## 로컬 실행
 
-1. 압축을 풉니다.
-2. VS Code에서 `jy-web-portfolio` 폴더를 엽니다.
-3. `index.html`을 더블클릭하거나 Live Server로 실행합니다.
+이 README가 있는 폴더에서 실행합니다.
 
-## 연결된 사이트
+```sh
+python3 -m http.server 8000 --bind 0.0.0.0
+```
 
-- UNFORM Digital Museum: https://unform-digital-museum.vercel.app/
-- NOVERA: https://novera-ebon.vercel.app/
-- 태경물산(카페24): https://tgyeong.com/
-- 태경물산(웹): https://tk-nine-sand.vercel.app/index.html
-- NEXCORE: https://corporate-portfolio-five.vercel.app/
+기존 정적 사이트 배포 구조와 문서 루트는 그대로 유지합니다. `index.html`, `style.css`, `script.js`, `assets`를 함께 배포하세요.
 
-## 프로필 사진 교체
+## 콘텐츠 관리
 
-`assets/images` 폴더의 아래 파일을 본인 사진으로 덮어쓰면 됩니다.
+- 화면 순서: 메인 → 서비스 → 스튜디오 소개 → 프로젝트 → 제작 과정 → 문의
+- 태경물산 카페24·웹 버전은 실제 고객 프로젝트입니다. UNFORM은 개인 콘셉트 프로젝트입니다. NOVERA와 NEXCORE는 고객 실적으로 단정하지 않는 포트폴리오 작업입니다.
+- 기존 프로젝트 5개와 외부 사이트 링크를 유지합니다. 프로젝트의 목적·담당 작업·기술·구현 내용을 함께 안내합니다.
+- 이메일은 기존 연락처인 `yg03166@naver.com`을 사용합니다. 카카오톡은 확인된 링크가 없어 준비 중으로 표시합니다. 실제 채널이 준비되면 연락 버튼과 안내문을 함께 수정하세요.
+- 실제 구현 범위가 확인되지 않은 결제·회원·관리 기능, 고객 후기, 경력, 성과 수치는 기재하지 않습니다.
 
-- `profile-1.jpg`
-- `profile-2.jpg`
+## 이미지
 
-파일명은 그대로 유지하는 것이 가장 쉽습니다.
+화면에는 최장변 1,600px 이하의 WebP 파일을 사용합니다. 기존 JPG·PNG 원본은 보존했습니다.
 
-## 사이트 미리보기 이미지 교체
+- 큰 프로필: `assets/images/s1.webp`
+- 작은 프로필: `assets/images/s2.webp`
+- 프로젝트: `unform.webp`, `novera.webp`, `TK2.webp`, `TK1.webp`, `NEXCORE.webp`
 
-프로젝트 5개 모두 실제 사이트의 첫 화면 캡처를 사용합니다. UNFORM 이미지는 공개 사이트를 1920×1080 해상도로 열어 캡처한 `assets/images/unform.png`입니다. 이미지를 교체하려면 해당 파일을 바꾸거나 `index.html`의 이미지 경로를 수정하세요.
+사진을 교체할 때는 실제로 참조하는 WebP도 함께 갱신하고 `index.html`의 이미지 설명과 원본 가로·세로 치수를 확인하세요. 화면 크롭은 CSS에서 제어합니다.
+
+## 검증
+
+```sh
+node --check script.js
+git diff --check
+```
+
+브라우저에서는 PC·태블릿·모바일의 가로 넘침, 이미지 로딩, 모바일 메뉴의 열기·닫기·Escape·키보드 탐색, 내부 링크, 모션 감소 설정을 확인합니다. JavaScript를 끄더라도 본문과 기본 문의 링크는 표시됩니다. IntersectionObserver 애니메이션은 모션 감소 설정에서 비활성화됩니다.
