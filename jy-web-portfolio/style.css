@@ -2186,20 +2186,8 @@ main,
     animation: none !important;
   }
 }
-/* Preserve the complete UNFORM capture inside the same project-image grid. */
-.project-unform .website-preview {
-  aspect-ratio: 1.6;
-  display: grid;
-  place-items: center;
-  background: #08090c;
-}
+/* Let the supplied wide capture set its frame height without letterboxing. */
 .project-unform .website-preview img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1.6;
-  object-fit: contain;
-  object-position: center;
-}
-.project-unform .website-preview:hover img {
-  transform: none;
+  height: auto;
+  aspect-ratio: auto;
 }
