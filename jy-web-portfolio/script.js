@@ -75,3 +75,105 @@ if ('IntersectionObserver' in window) {
   });
 
 }
+
+// Decorative pointer effects run only for a mouse with motion enabled.
+const pointerPreference = window.matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
+const mouseEffects = document.querySelector('.mouse-effects');
+const sparkleLayer = document.querySelector('.sparkle-layer');
+const cursorParts = mouseEffects.querySelectorAll('.cursor-aura, .cursor-ring, .cursor-heart');
+const tiltCards = document.querySelectorAll('.hero-project, .website-preview, .featured-artwork');
+let pointerFrame = 0;
+let lastSparkle = 0;
+let pointerX = 0;
+let pointerY = 0;
+let followX = 0;
+let followY = 0;
+
+function drawPointer() {
+  followX += (pointerX - followX) * 0.22;
+  followY += (pointerY - followY) * 0.22;
+  cursorParts.forEach(part => {
+    part.style.transform = `translate3d(${followX}px, ${followY}px, 0)`;
+  });
+  if (Math.abs(pointerX - followX) + Math.abs(pointerY - followY) > 0.4) {
+    pointerFrame = requestAnimationFrame(drawPointer);
+  } else {
+    pointerFrame = 0;
+  }
+}
+
+function movePointer(event) {
+  if (event.pointerType !== 'mouse') return;
+  pointerX = event.clientX;
+  pointerY = event.clientY;
+  if (!mouseEffects.classList.contains('is-visible')) {
+    followX = pointerX;
+    followY = pointerY;
+  }
+  mouseEffects.classList.add('is-visible');
+  mouseEffects.classList.toggle('is-link', Boolean(event.target.closest('a, button')));
+  mouseEffects.classList.toggle('is-project', Boolean(event.target.closest('.hero-project, .website-card > a')));
+  if (!pointerFrame) pointerFrame = requestAnimationFrame(drawPointer);
+  const now = performance.now();
+  if (now - lastSparkle > 95 && sparkleLayer.childElementCount < 8) {
+    lastSparkle = now;
+    const spark = document.createElement('span');
+    spark.className = 'cursor-spark';
+    spark.textContent = Math.random() > 0.5 ? '♡' : '✧';
+    spark.style.left = `${pointerX}px`;
+    spark.style.top = `${pointerY}px`;
+    spark.style.setProperty('--drift', `${(Math.random() - 0.5) * 40}px`);
+    spark.addEventListener('animationend', () => spark.remove(), { once: true });
+    sparkleLayer.append(spark);
+  }
+}
+
+function resetTilt(event) {
+  event.currentTarget.style.removeProperty('--tilt-x');
+  event.currentTarget.style.removeProperty('--tilt-y');
+}
+
+function tiltCard(event) {
+  if (event.pointerType !== 'mouse') return;
+  const bounds = event.currentTarget.getBoundingClientRect();
+  const x = Math.max(-0.5, Math.min(0.5, (event.clientX - bounds.left) / bounds.width - 0.5));
+  const y = Math.max(-0.5, Math.min(0.5, (event.clientY - bounds.top) / bounds.height - 0.5));
+  event.currentTarget.style.setProperty('--tilt-x', `${-y * 5}deg`);
+  event.currentTarget.style.setProperty('--tilt-y', `${x * 5}deg`);
+}
+
+function hidePointer() {
+  mouseEffects.classList.remove('is-visible', 'is-link', 'is-project');
+  cancelAnimationFrame(pointerFrame);
+  pointerFrame = 0;
+  sparkleLayer.replaceChildren();
+  tiltCards.forEach(card => {
+    card.style.removeProperty('--tilt-x');
+    card.style.removeProperty('--tilt-y');
+  });
+}
+
+function syncPointerEffects() {
+  document.removeEventListener('pointermove', movePointer);
+  tiltCards.forEach(card => {
+    card.removeEventListener('pointermove', tiltCard);
+    card.removeEventListener('pointerleave', resetTilt);
+  });
+  hidePointer();
+  document.documentElement.classList.toggle('pointer-effects', pointerPreference.matches);
+  if (pointerPreference.matches) {
+    document.addEventListener('pointermove', movePointer, { passive: true });
+    tiltCards.forEach(card => {
+      card.addEventListener('pointermove', tiltCard, { passive: true });
+      card.addEventListener('pointerleave', resetTilt);
+    });
+  }
+}
+
+pointerPreference.addEventListener('change', syncPointerEffects);
+document.documentElement.addEventListener('pointerleave', hidePointer);
+window.addEventListener('blur', hidePointer);
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) hidePointer();
+});
+syncPointerEffects();
