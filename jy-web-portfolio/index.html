@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="서지영의 웹디자인 및 반응형 웹 퍼블리싱 포트폴리오입니다.">
+  <meta name="description" content="웹디자이너·웹 퍼블리셔 서지영의 포트폴리오. UNFORM 디지털 뮤지엄부터 브랜드·기업 웹사이트까지, 목적에 맞는 디자인과 반응형 웹 구현 작업을 소개합니다.">
   <meta name="theme-color" content="#faf7f2">
-  <title>JY Studio — Web Design Portfolio</title>
+  <title>서지영 | Web Designer & Publisher — JY Studio</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서지영 — Web Designer &amp; Publisher">
+  <meta property="og:description" content="브랜드의 목적을 디자인으로, 디자인을 실제 웹사이트로. 디지털 뮤지엄·브랜드·기업 웹 프로젝트 5선을 소개합니다.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +30,8 @@
       </a>
 
       <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#work">WORK <sup>05</sup></a>
         <a href="#about">ABOUT</a>
-        <a href="#work">WORK <sup>04</sup></a>
         <a href="#services">SERVICES</a>
         <a href="#contact">CONTACT</a>
       </nav>
@@ -39,8 +44,8 @@
     </div>
 
     <nav class="mobile-menu" id="mobileMenu" aria-label="모바일 메뉴">
+      <a href="#work">WORK <sup>05</sup></a>
       <a href="#about">ABOUT</a>
-      <a href="#work">WORK <sup>04</sup></a>
       <a href="#services">SERVICES</a>
       <a href="#contact">CONTACT</a>
     </nav>
@@ -48,116 +53,89 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-orb orb-one" aria-hidden="true"></div>
-      <div class="hero-orb orb-two" aria-hidden="true"></div>
-
       <div class="hero-inner">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span> INDEPENDENT DESIGNER &amp; WEB PUBLISHER</div>
+          <div class="eyebrow"><span></span> WEB DESIGNER &amp; PUBLISHER · 서지영</div>
           <h1>
-            Thoughtful<br>design.<br><em>Lovely details.</em>
+            Design with<br>purpose.<br><em>Built to work.</em>
           </h1>
           <p class="hero-lead">
-            브랜드의 분위기를 읽고, 감각적인 화면을<br>
-            실제로 작동하는 반응형 웹사이트로 완성합니다.
+            브랜드의 목적을 디자인으로, 디자인을 실제 웹사이트로.<br>
+            기획의 의도와 사용성을 함께 생각하는 웹디자이너 서지영입니다.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#work">프로젝트 둘러보기 <span>↗</span></a>
-            <a class="btn btn-ghost" href="#about">저를 소개할게요 <span>↗</span></a>
+            <a class="btn btn-ghost" href="#about">디자이너 소개 <span>↗</span></a>
           </div>
         </div>
 
         <div class="hero-visual reveal" data-delay="120">
-          <div class="visual-caption"><span>THE ART OF MAKING IT FEEL RIGHT</span><span>✳︎</span></div>
-          <div class="visual-canvas" aria-hidden="true"><span>Made with<br><em>a little love.</em></span></div>
-          <div class="hero-browser browser-back">
-            <div class="browser-bar"><i></i><i></i><i></i></div>
-            <img src="assets/images/TK1.png" alt="태경물산 웹사이트 미리보기">
-          </div>
-          <div class="hero-browser browser-main">
-            <div class="browser-bar"><i></i><i></i><i></i><span>SELECTED PROJECT — NOVERA</span></div>
-            <img src="assets/images/novera.png" alt="NOVERA 웹사이트 미리보기">
-          </div>
-          <div class="floating-note note-one"><span>✳︎</span> DESIGN WITH<br><strong>personality.</strong></div>
-          <div class="floating-note note-two"><span>↗</span> FROM THE FIRST IDEA<br><strong>to the last pixel.</strong></div>
-          <div class="spark spark-a" aria-hidden="true">✦</div>
-          <div class="spark spark-b" aria-hidden="true">✿</div>
+          <div class="hero-project-label"><span>FEATURED PROJECT / 01</span><span>DIGITAL MUSEUM</span></div>
+          <a class="hero-project" href="https://unform-digital-museum.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="대표 프로젝트 UNFORM 디지털 뮤지엄 사이트 새 창에서 보기">
+            <div class="hero-project-image">
+              <img src="assets/images/unform-cover.svg" width="1440" height="960" fetchpriority="high" alt="UNFORM 디지털 뮤지엄 프로젝트 소개용 그래픽 커버">
+              <span class="hero-cover-label">PROJECT COVER</span>
+            </div>
+            <div class="hero-project-caption">
+              <div><strong>UNFORM</strong><span>Digital Museum · Personal Project</span></div>
+              <span class="hero-project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
         </div>
       </div>
 
       <div class="hero-stats" aria-label="포트폴리오 핵심 정보">
-        <div><strong>04</strong><span>LIVE WEB<br>PROJECTS</span></div>
-        <div><strong>100%</strong><span>RESPONSIVE<br>LAYOUT</span></div>
-        <div><strong>UI</strong><span>DESIGN TO<br>FRONT-END</span></div>
-        <a class="scroll-hint" href="#work"><span>A FEW THINGS I’VE MADE</span><i>↓</i></a>
+        <div><strong>05</strong><span>LIVE WEB<br>PROJECTS</span></div>
+        <div><strong>Design</strong><span>BRAND &amp;<br>USER INTERFACE</span></div>
+        <div><strong>Code</strong><span>RESPONSIVE<br>WEB PUBLISHING</span></div>
+        <a class="scroll-hint" href="#work"><span>EXPLORE SELECTED WORK</span><i>↓</i></a>
       </div>
     </section>
 
-    <section class="marquee" aria-label="전문 분야">
-      <div class="marquee-track">
-        <span>WEB DESIGN</span><i>✿</i><span>RESPONSIVE</span><i>✦</i><span>HTML · CSS</span><i>♡</i><span>JAVASCRIPT</span><i>✿</i><span>UI/UX</span><i>✦</i><span>DEPLOYMENT</span><i>♡</i>
-        <span>WEB DESIGN</span><i>✿</i><span>RESPONSIVE</span><i>✦</i><span>HTML · CSS</span><i>♡</i><span>JAVASCRIPT</span><i>✿</i><span>UI/UX</span><i>✦</i><span>DEPLOYMENT</span><i>♡</i>
-      </div>
-    </section>
-
-    <section class="about section" id="about">
-      <div class="section-heading reveal">
-        <span class="section-number">01</span>
-        <div>
-          <p class="kicker">ABOUT ME</p>
-          <h2>디자인과 개발 사이,<br><em>좋아하는 것을 오래 하고 싶어요.</em></h2>
-        </div>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-gallery reveal">
-          <figure class="about-photo photo-main">
-            <img loading="lazy" decoding="async" src="assets/images/s1.jpg" alt="서지영 프로필 사진 1">
-          </figure>
-          <figure class="about-photo photo-sub">
-            <img loading="lazy" decoding="async" src="assets/images/s2.jpg" alt="서지영 프로필 사진 2">
-          </figure>
-          <div class="about-sticker">HELLO!<br><strong>I'M JY</strong><span>✿</span></div>
-        </div>
-
-        <div class="about-copy reveal" data-delay="120">
-          <p class="about-intro">
-            안녕하세요. 저는 <strong>감각적인 디자인을 실제 웹사이트로 구현하는</strong> 웹디자이너이자 웹 퍼블리셔입니다.
-          </p>
-          <p>
-            브랜드가 가진 분위기와 이야기를 시각적으로 표현하고, 보기 좋은 디자인이 다양한 화면에서도 편리하게 작동하도록 설계하는 일을 좋아합니다. 기획부터 디자인, 반응형 퍼블리싱과 배포까지 하나의 흐름으로 완성합니다.
-          </p>
-
-          <dl class="profile-list">
-            <div><dt>NAME</dt><dd>서지영 / Web Designer &amp; Publisher</dd></div>
-            <div><dt>BASED IN</dt><dd>Daegu, Korea</dd></div>
-            <div><dt>FOCUS</dt><dd>Corporate · Brand · Portfolio Website</dd></div>
-            <div><dt>TOOLS</dt><dd>Figma · VS Code · Cafe24 · Vercel</dd></div>
-          </dl>
-
-          <div class="skill-tags" aria-label="기술 스택">
-            <span>Web Design</span><span>UI/UX</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Web</span><span>Cafe24</span><span>Vercel</span>
-          </div>
-        </div>
-      </div>
+    <section class="expertise" aria-label="주요 작업 분야">
+      <div><span>01 / DESIGN</span><strong>브랜드를 담는 시각 디자인</strong><p>브랜드의 성격과 콘텐츠를 반영한 UI 설계</p></div>
+      <div><span>02 / PUBLISHING</span><strong>다양한 화면을 위한 구현</strong><p>HTML · CSS · JavaScript 기반 반응형 퍼블리싱</p></div>
+      <div><span>03 / DELIVERY</span><strong>실제로 연결되는 웹사이트</strong><p>Cafe24 · GitHub · Vercel을 활용한 제작 및 배포</p></div>
     </section>
 
     <section class="work section" id="work">
       <div class="section-heading reveal">
-        <span class="section-number">02</span>
+        <span class="section-number">01</span>
         <div>
-          <p class="kicker">SELECTED WORK / 04 PROJECTS</p>
+          <p class="kicker">SELECTED WORK / 05 PROJECTS</p>
           <h2>브랜드의 이야기를,<br><em>웹사이트로 만듭니다.</em></h2>
         </div>
       </div>
 
       <div class="work-intro reveal">
-        <p>각 프로젝트의 기획 의도와 브랜드 분위기에 맞춰 디자인하고, PC·태블릿·모바일에서 자연스럽게 보이도록 반응형으로 구현했습니다.</p>
-        <span>카드를 누르면 실제 사이트가 새 창에서 열립니다 ↗</span>
+        <p>디지털 뮤지엄, 패션 브랜드, 기업 웹사이트까지. 서로 다른 목적과 콘텐츠를 웹으로 구현한 다섯 개의 프로젝트를 소개합니다.</p>
+        <span>각 프로젝트에서 실제 사이트를 확인하세요 ↗</span>
       </div>
 
       <div class="website-grid">
-        <article class="website-card website-card-wide reveal">
+        <article class="website-card featured-project reveal">
+          <a href="https://unform-digital-museum.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="UNFORM 디지털 뮤지엄 실제 사이트 새 창에서 보기">
+            <div class="featured-artwork">
+              <img loading="lazy" decoding="async" src="assets/images/unform-cover.svg" width="1440" height="960" alt="UNFORM 디지털 뮤지엄 프로젝트 소개용 커버: 건축 프레임과 추상 조형물">
+              <span class="cover-label">PROJECT COVER · UNFORM</span>
+            </div>
+            <div class="featured-copy">
+              <div class="featured-heading"><span class="project-label">FEATURED PROJECT</span><span class="website-number">01 / 05</span></div>
+              <span class="project-category">CULTURE · DIGITAL MUSEUM</span>
+              <h3>UNFORM<span>Digital Museum</span></h3>
+              <p>디지털 뮤지엄을 주제로 제작한 개인 웹 프로젝트입니다. 문화·예술 분야로 작업의 범위를 확장하며, 전시와 디지털 공간이 만나는 웹 작업을 소개합니다.</p>
+              <dl class="project-facts">
+                <div><dt>PROJECT TYPE</dt><dd>디지털 뮤지엄 웹사이트</dd></div>
+                <div><dt>CREATOR</dt><dd>서지영</dd></div>
+                <div><dt>LIVE WEBSITE</dt><dd>unform-digital-museum.vercel.app</dd></div>
+              </dl>
+              <span class="featured-link">UNFORM 사이트 방문 <span aria-hidden="true">↗</span></span>
+              <small class="cover-note">프로젝트 소개를 위한 그래픽 커버입니다.</small>
+            </div>
+          </a>
+        </article>
+
+        <article class="website-card reveal">
           <a href="https://novera-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="NOVERA 실제 사이트 새 창에서 보기">
             <div class="website-preview preview-dark">
               <div class="browser-top"><span></span><span></span><span></span><b>novera-ebon.vercel.app</b></div>
@@ -165,12 +143,14 @@
               <div class="website-hover"><span>LIVE SITE</span><i>↗</i></div>
             </div>
             <div class="website-info">
-              <div class="website-number">01</div>
+              <div class="website-number">02</div>
               <div class="website-copy">
                 <span>FASHION · BRAND WEBSITE</span>
                 <h3>NOVERA</h3>
                 <p>큰 이미지와 절제된 타이포그래피를 활용해 럭셔리 패션 브랜드의 분위기를 표현한 반응형 웹사이트입니다.</p>
+                <p class="project-focus"><b>DESIGN FOCUS</b>패션 브랜드의 비주얼과 타이포그래피</p>
                 <ul><li>Art Direction</li><li>Responsive UI</li><li>Front-end</li><li>Vercel</li></ul>
+                <span class="project-visit">실제 사이트 보기 <span aria-hidden="true">↗</span></span>
               </div>
               <div class="site-arrow">↗</div>
             </div>
@@ -185,12 +165,14 @@
               <div class="website-hover"><span>LIVE SITE</span><i>↗</i></div>
             </div>
             <div class="website-info">
-              <div class="website-number">02</div>
+              <div class="website-number">03</div>
               <div class="website-copy">
                 <span>CORPORATE · CAFE24</span>
                 <h3>태경물산 <small>카페24</small></h3>
                 <p>전기·통신·태양광 자재 전문기업의 신뢰감과 사업 정보를 체계적으로 전달하도록 제작한 기업 홈페이지입니다.</p>
+                <p class="project-focus"><b>DESIGN FOCUS</b>기업 정보 구조와 플랫폼 기반 제작</p>
                 <ul><li>Web Design</li><li>Cafe24</li><li>Responsive</li><li>Corporate UI</li></ul>
+                <span class="project-visit">실제 사이트 보기 <span aria-hidden="true">↗</span></span>
               </div>
               <div class="site-arrow">↗</div>
             </div>
@@ -205,19 +187,21 @@
               <div class="website-hover"><span>LIVE SITE</span><i>↗</i></div>
             </div>
             <div class="website-info">
-              <div class="website-number">03</div>
+              <div class="website-number">04</div>
               <div class="website-copy">
                 <span>CORPORATE · VANILLA FRONT-END</span>
                 <h3>태경물산 <small>웹 버전</small></h3>
                 <p>VS Code에서 HTML, CSS, JavaScript로 직접 구현하고 Vercel에 배포한 독립형 기업 웹사이트입니다.</p>
+                <p class="project-focus"><b>DESIGN FOCUS</b>반응형 레이아웃과 직접 구현</p>
                 <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vercel</li></ul>
+                <span class="project-visit">실제 사이트 보기 <span aria-hidden="true">↗</span></span>
               </div>
               <div class="site-arrow">↗</div>
             </div>
           </a>
         </article>
 
-        <article class="website-card website-card-wide reveal" data-delay="170">
+        <article class="website-card reveal" data-delay="170">
           <a href="https://corporate-portfolio-five.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="NEXCORE 실제 사이트 새 창에서 보기">
             <div class="website-preview preview-blue">
               <div class="browser-top"><span></span><span></span><span></span><b>corporate-portfolio-five.vercel.app</b></div>
@@ -225,12 +209,14 @@
               <div class="website-hover"><span>LIVE SITE</span><i>↗</i></div>
             </div>
             <div class="website-info">
-              <div class="website-number">04</div>
+              <div class="website-number">05</div>
               <div class="website-copy">
                 <span>TECH · CORPORATE WEBSITE</span>
                 <h3>NEXCORE</h3>
                 <p>기술 기업의 전문성과 규모감을 강조하기 위해 대형 비주얼과 명확한 정보 구조로 구성한 기업 포트폴리오 사이트입니다.</p>
+                <p class="project-focus"><b>DESIGN FOCUS</b>기술 기업의 브랜드 이미지와 정보 전달</p>
                 <ul><li>UI Design</li><li>Corporate</li><li>Responsive</li><li>Deployment</li></ul>
+                <span class="project-visit">실제 사이트 보기 <span aria-hidden="true">↗</span></span>
               </div>
               <div class="site-arrow">↗</div>
             </div>
@@ -239,12 +225,53 @@
       </div>
     </section>
 
+    <section class="about section" id="about">
+      <div class="section-heading reveal">
+        <span class="section-number">02</span>
+        <div>
+          <p class="kicker">ABOUT ME</p>
+          <h2>브랜드를 이해하고,<br><em>일관된 웹 경험을 설계합니다.</em></h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-gallery reveal">
+          <figure class="about-photo photo-main">
+            <img loading="lazy" decoding="async" src="assets/images/s1.jpg" alt="서지영 프로필 사진 1">
+          </figure>
+          <figure class="about-photo photo-sub">
+            <img loading="lazy" decoding="async" src="assets/images/s2.jpg" alt="서지영 프로필 사진 2">
+          </figure>
+        </div>
+
+        <div class="about-copy reveal" data-delay="120">
+          <p class="about-intro">
+            <strong>목적이 분명한 디자인과 완성도 있는 구현.</strong><br>두 가지를 함께 고민하는 웹디자이너·웹 퍼블리셔 서지영입니다.
+          </p>
+          <p>
+            브랜드의 성격과 콘텐츠의 우선순위를 파악하고, 정보 구조·타이포그래피·이미지의 흐름을 설계합니다. HTML, CSS, JavaScript 기반의 반응형 퍼블리싱과 Cafe24·Vercel을 활용한 웹사이트 구현 작업을 진행합니다.
+          </p>
+
+          <dl class="profile-list">
+            <div><dt>NAME</dt><dd>서지영 / Web Designer &amp; Publisher</dd></div>
+            <div><dt>BASED IN</dt><dd>Daegu, Korea</dd></div>
+            <div><dt>FOCUS</dt><dd>Brand · Corporate · Digital Experience</dd></div>
+            <div><dt>TOOLS</dt><dd>Figma · VS Code · Cafe24 · Vercel</dd></div>
+          </dl>
+
+          <div class="skill-tags" aria-label="기술 스택">
+            <span>Web Design</span><span>UI/UX</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Web</span><span>Cafe24</span><span>Vercel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="services section" id="services">
       <div class="section-heading reveal">
         <span class="section-number">03</span>
         <div>
           <p class="kicker">WHAT I DO</p>
-          <h2>예쁜 화면을 넘어,<br><em>실제로 작동하는 웹사이트.</em></h2>
+          <h2>기획의 의도를 담고,<br><em>구현의 완성도를 높입니다.</em></h2>
         </div>
       </div>
 
@@ -272,7 +299,7 @@
       <div class="process-card reveal">
         <div class="process-copy">
           <span>MY PROCESS</span>
-          <h3>느낌을 찾고,<br>구조를 만들고,<br>웹으로 완성해요.</h3>
+          <h3>목적에서 출발해,<br>사용자 경험으로<br>완성합니다.</h3>
         </div>
         <ol class="process-steps">
           <li><span>01</span><div><strong>Discover</strong><p>브랜드와 목표, 필요한 기능을 정리합니다.</p></div></li>
@@ -285,13 +312,13 @@
 
     <section class="contact section" id="contact">
       <div class="contact-card reveal">
-        <div class="contact-deco deco-one" aria-hidden="true">✳︎</div>
-        <div class="contact-deco deco-two" aria-hidden="true">✦</div>
-        <p>HAVE A LOVELY WEB PROJECT?</p>
-        <h2>좋은 아이디어가 있나요?<br><em>함께 시작해요.</em></h2>
+        <span class="contact-index">LET’S CONNECT / 04</span>
+        <p>LET’S BUILD YOUR NEXT WEBSITE</p>
+        <h2>브랜드에 필요한 웹사이트,<br><em>함께 구체화해 볼까요?</em></h2>
+        <p class="contact-description">웹디자인 · 반응형 퍼블리싱 · 브랜드 및 기업 웹사이트 제작 문의</p>
         <a href="mailto:yg03166@naver.com">yg03166@naver.com <span>↗</span></a>
         <div class="contact-bottom">
-          <span>Web Design Portfolio</span>
+          <span>SEO JIYOUNG · WEB DESIGNER &amp; PUBLISHER</span>
           <span>Daegu · KOREA</span>
         </div>
       </div>

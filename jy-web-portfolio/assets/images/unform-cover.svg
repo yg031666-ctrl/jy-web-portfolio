@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960" role="img" aria-labelledby="title desc">
+  <title id="title">UNFORM — Digital Museum project cover</title>
+  <desc id="desc">An original portfolio cover, not a screenshot: an architectural frame and abstract sculptural forms in ivory, graphite and muted coral.</desc>
+  <defs>
+    <linearGradient id="wall" x2="1" y2="1"><stop stop-color="#28322f"/><stop offset="1" stop-color="#131b19"/></linearGradient>
+    <linearGradient id="arch" x2="1" y2=".7"><stop stop-color="#eadfc9"/><stop offset=".5" stop-color="#a79d86"/><stop offset="1" stop-color="#d7cbb0"/></linearGradient>
+    <linearGradient id="sphere" x1=".1" y1=".1" x2=".9" y2=".9"><stop stop-color="#efc3af"/><stop offset=".6" stop-color="#bb7f6c"/><stop offset="1" stop-color="#694638"/></linearGradient>
+    <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#d6cebc"/><stop offset="1" stop-color="#aea28e"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#9ba58d" stop-opacity=".3"/><stop offset="1" stop-color="#9ba58d" stop-opacity="0"/></radialGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <path fill="url(#wall)" d="M0 0h1440v960H0z"/>
+  <circle cx="1050" cy="390" r="500" fill="url(#light)"/>
+  <g fill="#eee8d8" font-family="Arial, sans-serif">
+    <text x="72" y="80" font-size="20" letter-spacing="3">UNFORM</text>
+    <text x="1368" y="80" font-size="13" letter-spacing="3" text-anchor="end">DIGITAL MUSEUM</text>
+  </g>
+  <path d="M72 112h1296" stroke="#eee8d8" stroke-opacity=".25"/>
+  <g transform="translate(850 170)">
+    <path d="M0 450V190a190 190 0 0 1 380 0v260h-58V190a132 132 0 0 0-264 0v260Z" fill="url(#arch)"/>
+    <path d="M380 450h38V190A209 209 0 0 0 190-18 190 190 0 0 1 380 190Z" fill="#786e5a"/>
+    <path d="m-90 450 130-40h335l105 40v25H-90Z" fill="url(#floor)"/>
+    <ellipse cx="190" cy="426" rx="135" ry="19" fill="#000" opacity=".25" filter="url(#shadow)"/>
+    <circle cx="190" cy="300" r="105" fill="url(#sphere)"/>
+    <path d="M126 385h130v62H126Z" fill="#c6bda7"/>
+    <path d="M256 385l27-12v62l-27 12Z" fill="#8b826f"/>
+  </g>
+  <g fill="#eee8d8">
+    <text x="70" y="260" font-family="Arial, sans-serif" font-size="14" letter-spacing="5">ART / SPACE / DIGITAL</text>
+    <text x="62" y="440" font-family="Georgia, serif" font-size="141" letter-spacing="-7">Beyond</text>
+    <text x="62" y="590" font-family="Georgia, serif" font-style="italic" font-size="141" letter-spacing="-7">the frame.</text>
+    <text x="72" y="697" font-family="Arial, sans-serif" font-size="17" letter-spacing="3">A DIGITAL MUSEUM PROJECT</text>
+  </g>
+  <path d="M72 824h1296" stroke="#eee8d8" stroke-opacity=".25"/>
+  <text x="72" y="876" fill="#eee8d8" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">UNFORM — PORTFOLIO COVER</text>
+  <g fill="none" stroke="#c8967f" stroke-width="2"><circle cx="1335" cy="873" r="30"/><path d="M1323 885l24-24m-22 0h22v22"/></g>
+</svg>

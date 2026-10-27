@@ -1,6 +1,6 @@
 # JY Studio 웹 포트폴리오
 
-웹사이트 프로젝트 4개만 집중적으로 보여주는 반응형 포트폴리오입니다.
+디지털 뮤지엄·브랜드·기업 웹사이트 프로젝트 5개를 소개하는 웹디자이너·웹 퍼블리셔 서지영의 반응형 포트폴리오입니다.
 
 ## 실행 방법
 
@@ -10,6 +10,7 @@
 
 ## 연결된 사이트
 
+- UNFORM Digital Museum: https://unform-digital-museum.vercel.app/
 - NOVERA: https://novera-ebon.vercel.app/
 - 태경물산(카페24): https://tgyeong.com/
 - 태경물산(웹): https://tk-nine-sand.vercel.app/index.html
@@ -26,4 +27,4 @@
 
 ## 사이트 미리보기 이미지 교체
 
-현재는 포트폴리오 분위기에 맞춘 SVG 미리보기 이미지가 들어 있습니다. 실제 사이트 캡처로 바꾸려면 같은 파일명으로 교체하거나 `index.html`의 이미지 경로를 수정하세요.
+기존 프로젝트는 실제 사이트 캡처를 사용합니다. UNFORM은 `assets/images/unform-cover.svg`의 별도 프로젝트 커버를 사용하며, 실제 사이트 스크린샷은 아닙니다. 이미지를 교체하려면 해당 파일을 바꾸거나 `index.html`의 이미지 경로를 수정하세요.
