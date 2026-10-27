@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="서지영의 웹디자인 및 반응형 웹 퍼블리싱 포트폴리오입니다.">
-  <meta name="theme-color" content="#fff8fb">
+  <meta name="theme-color" content="#faf7f2">
   <title>JY Studio — Web Design Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
   <div class="grain" aria-hidden="true"></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <header class="site-header" id="siteHeader">
     <div class="header-inner">
@@ -26,12 +26,12 @@
 
       <nav class="desktop-nav" aria-label="주요 메뉴">
         <a href="#about">ABOUT</a>
-        <a href="#work">WEB PROJECTS</a>
+        <a href="#work">WORK <sup>04</sup></a>
         <a href="#services">SERVICES</a>
         <a href="#contact">CONTACT</a>
       </nav>
 
-      <a class="header-cta" href="#work">VIEW WORK <span>↓</span></a>
+      <a class="header-cta" href="#contact">LET’S TALK <span>↗</span></a>
 
       <button class="menu-toggle" type="button" aria-controls="mobileMenu" aria-expanded="false" aria-label="메뉴 열기">
         <span></span><span></span>
@@ -40,7 +40,7 @@
 
     <nav class="mobile-menu" id="mobileMenu" aria-label="모바일 메뉴">
       <a href="#about">ABOUT</a>
-      <a href="#work">WEB PROJECTS</a>
+      <a href="#work">WORK <sup>04</sup></a>
       <a href="#services">SERVICES</a>
       <a href="#contact">CONTACT</a>
     </nav>
@@ -53,32 +53,33 @@
 
       <div class="hero-inner">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span> WEB DESIGN · FRONT-END</div>
+          <div class="eyebrow"><span></span> INDEPENDENT DESIGNER &amp; WEB PUBLISHER</div>
           <h1>
-            Lovely websites,<br>
-            <em>beautifully coded.</em>
+            Thoughtful<br>design.<br><em>Lovely details.</em>
           </h1>
           <p class="hero-lead">
             브랜드의 분위기를 읽고, 감각적인 화면을<br>
             실제로 작동하는 반응형 웹사이트로 완성합니다.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">웹사이트 보기 <span>↓</span></a>
-            <a class="btn btn-ghost" href="#about">디자이너 소개</a>
+            <a class="btn btn-primary" href="#work">프로젝트 둘러보기 <span>↗</span></a>
+            <a class="btn btn-ghost" href="#about">저를 소개할게요 <span>↗</span></a>
           </div>
         </div>
 
         <div class="hero-visual reveal" data-delay="120">
+          <div class="visual-caption"><span>THE ART OF MAKING IT FEEL RIGHT</span><span>✳︎</span></div>
+          <div class="visual-canvas" aria-hidden="true"><span>Made with<br><em>a little love.</em></span></div>
           <div class="hero-browser browser-back">
             <div class="browser-bar"><i></i><i></i><i></i></div>
-            <img src="assets/images/preview-taekyung-web.svg" alt="태경물산 웹사이트 미리보기">
+            <img src="assets/images/TK1.png" alt="태경물산 웹사이트 미리보기">
           </div>
           <div class="hero-browser browser-main">
-            <div class="browser-bar"><i></i><i></i><i></i><span>jy-web-portfolio</span></div>
-            <img src="assets/images/preview-novera.svg" alt="NOVERA 웹사이트 미리보기">
+            <div class="browser-bar"><i></i><i></i><i></i><span>SELECTED PROJECT — NOVERA</span></div>
+            <img src="assets/images/novera.png" alt="NOVERA 웹사이트 미리보기">
           </div>
-          <div class="floating-note note-one">RESPONSIVE<br><strong>WEB DESIGN</strong></div>
-          <div class="floating-note note-two">DESIGN<br><strong>&amp; CODE</strong></div>
+          <div class="floating-note note-one"><span>✳︎</span> DESIGN WITH<br><strong>personality.</strong></div>
+          <div class="floating-note note-two"><span>↗</span> FROM THE FIRST IDEA<br><strong>to the last pixel.</strong></div>
           <div class="spark spark-a" aria-hidden="true">✦</div>
           <div class="spark spark-b" aria-hidden="true">✿</div>
         </div>
@@ -88,7 +89,7 @@
         <div><strong>04</strong><span>LIVE WEB<br>PROJECTS</span></div>
         <div><strong>100%</strong><span>RESPONSIVE<br>LAYOUT</span></div>
         <div><strong>UI</strong><span>DESIGN TO<br>FRONT-END</span></div>
-        <div class="scroll-hint"><span>SCROLL TO DISCOVER</span><i>↓</i></div>
+        <a class="scroll-hint" href="#work"><span>A FEW THINGS I’VE MADE</span><i>↓</i></a>
       </div>
     </section>
 
@@ -111,10 +112,10 @@
       <div class="about-grid">
         <div class="about-gallery reveal">
           <figure class="about-photo photo-main">
-            <img src="assets/images/s1.jpg" alt="서지영 프로필 사진 1">
+            <img loading="lazy" decoding="async" src="assets/images/s1.jpg" alt="서지영 프로필 사진 1">
           </figure>
           <figure class="about-photo photo-sub">
-            <img src="assets/images/s2.jpg" alt="서지영 프로필 사진 2">
+            <img loading="lazy" decoding="async" src="assets/images/s2.jpg" alt="서지영 프로필 사진 2">
           </figure>
           <div class="about-sticker">HELLO!<br><strong>I'M JY</strong><span>✿</span></div>
         </div>
@@ -145,8 +146,8 @@
       <div class="section-heading reveal">
         <span class="section-number">02</span>
         <div>
-          <p class="kicker">SELECTED WEB PROJECTS</p>
-          <h2>직접 디자인하고 구현한,<br><em>네 개의 웹사이트.</em></h2>
+          <p class="kicker">SELECTED WORK / 04 PROJECTS</p>
+          <h2>브랜드의 이야기를,<br><em>웹사이트로 만듭니다.</em></h2>
         </div>
       </div>
 
@@ -160,7 +161,7 @@
           <a href="https://novera-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="NOVERA 실제 사이트 새 창에서 보기">
             <div class="website-preview preview-dark">
               <div class="browser-top"><span></span><span></span><span></span><b>novera-ebon.vercel.app</b></div>
-              <img src="assets/images/novera.png" alt="NOVERA 패션 웹사이트 미리보기">
+              <img loading="lazy" decoding="async" src="assets/images/novera.png" alt="NOVERA 패션 웹사이트 미리보기">
               <div class="website-hover"><span>LIVE SITE</span><i>↗</i></div>
             </div>
             <div class="website-info">
@@ -180,7 +181,7 @@
           <a href="https://tgyeong.com/" target="_blank" rel="noopener noreferrer" aria-label="태경물산 카페24 사이트 새 창에서 보기">
             <div class="website-preview preview-gold">
               <div class="browser-top"><span></span><span></span><span></span><b>tgyeong.com</b></div>
-              <img src="assets/images/TK2.png" alt="태경물산 카페24 웹사이트 미리보기">
+              <img loading="lazy" decoding="async" src="assets/images/TK2.png" alt="태경물산 카페24 웹사이트 미리보기">
               <div class="website-hover"><span>LIVE SITE</span><i>↗</i></div>
             </div>
             <div class="website-info">
@@ -200,7 +201,7 @@
           <a href="https://tk-nine-sand.vercel.app/index.html" target="_blank" rel="noopener noreferrer" aria-label="태경물산 웹 버전 새 창에서 보기">
             <div class="website-preview preview-cream">
               <div class="browser-top"><span></span><span></span><span></span><b>tk-nine-sand.vercel.app</b></div>
-              <img src="assets/images/TK1.png" alt="태경물산 웹 버전 미리보기">
+              <img loading="lazy" decoding="async" src="assets/images/TK1.png" alt="태경물산 웹 버전 미리보기">
               <div class="website-hover"><span>LIVE SITE</span><i>↗</i></div>
             </div>
             <div class="website-info">
@@ -220,7 +221,7 @@
           <a href="https://corporate-portfolio-five.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="NEXCORE 실제 사이트 새 창에서 보기">
             <div class="website-preview preview-blue">
               <div class="browser-top"><span></span><span></span><span></span><b>corporate-portfolio-five.vercel.app</b></div>
-              <img src="assets/images/NEXCORE.png" alt="NEXCORE 기업 웹사이트 미리보기">
+              <img loading="lazy" decoding="async" src="assets/images/NEXCORE.png" alt="NEXCORE 기업 웹사이트 미리보기">
               <div class="website-hover"><span>LIVE SITE</span><i>↗</i></div>
             </div>
             <div class="website-info">
@@ -284,10 +285,10 @@
 
     <section class="contact section" id="contact">
       <div class="contact-card reveal">
-        <div class="contact-deco deco-one">✿</div>
-        <div class="contact-deco deco-two">✦</div>
+        <div class="contact-deco deco-one" aria-hidden="true">✳︎</div>
+        <div class="contact-deco deco-two" aria-hidden="true">✦</div>
         <p>HAVE A LOVELY WEB PROJECT?</p>
-        <h2>우리, 예쁜 웹사이트를<br><em>함께 만들어볼까요?</em></h2>
+        <h2>좋은 아이디어가 있나요?<br><em>함께 시작해요.</em></h2>
         <a href="mailto:yg03166@naver.com">yg03166@naver.com <span>↗</span></a>
         <div class="contact-bottom">
           <span>Web Design Portfolio</span>
