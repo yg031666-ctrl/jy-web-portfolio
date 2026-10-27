@@ -285,11 +285,6 @@ h2 em {
   background: var(--ivory);
   border-color: var(--gold);
 }
-.btn[aria-disabled="true"] {
-  cursor: default;
-  color: var(--muted);
-  border-color: #bcb7ad;
-}
 .hero-signature {
   font: 18px/1.6 var(--serif);
   margin-top: 55px;
