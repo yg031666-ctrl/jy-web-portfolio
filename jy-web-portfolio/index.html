@@ -246,7 +246,7 @@
             <span>SELECTED PROJECTS / 05</span>
           </div>
           <div class="website-grid">
-            <article class="website-card reveal">
+            <article class="website-card project-unform reveal">
               <a
                 class="website-preview"
                 href="https://unform-digital-museum.vercel.app/"
@@ -641,5 +641,60 @@
     <a class="mobile-inquiry" href="#contact"
       >홈페이지 제작 문의 <span aria-hidden="true">↗</span></a
     >
+    <aside
+      class="music-player"
+      aria-label="배경 음악"
+      data-state="waiting"
+      hidden
+    >
+      <audio
+        id="studioMusic"
+        src="assets/audio/studio-deep-house.mp3"
+        loop
+        preload="none"
+      ></audio>
+      <button
+        class="music-toggle"
+        type="button"
+        aria-label="딥하우스 재생"
+        aria-pressed="false"
+        aria-describedby="musicStatus"
+      >
+        <span class="music-play-icon" aria-hidden="true"></span>
+        <span class="music-label">DEEP HOUSE</span>
+        <span class="music-equalizer" aria-hidden="true"
+          ><i></i><i></i><i></i><i></i
+        ></span>
+      </button>
+      <details class="music-volume">
+        <summary aria-label="배경 음악 볼륨 조절">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+            <path d="M15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14" />
+          </svg>
+        </summary>
+        <div class="music-volume-panel">
+          <label for="musicVolume">볼륨</label
+          ><input
+            id="musicVolume"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="25"
+          /><output for="musicVolume">25%</output>
+        </div>
+      </details>
+      <span class="sr-only" id="musicStatus" role="status"
+        >음악을 준비하고 있어요.</span
+      >
+    </aside>
+    <script defer src="music.js"></script>
   </body>
 </html>

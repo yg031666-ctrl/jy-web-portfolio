@@ -257,7 +257,7 @@
             <span>SELECTED PROJECTS / 05</span>
           </div>
           <div class="website-grid">
-            <article class="website-card reveal">
+            <article class="website-card project-unform reveal">
               <a
                 class="website-preview"
                 href="https://unform-digital-museum.vercel.app/"
@@ -674,5 +674,60 @@
     <a class="mobile-inquiry" href="#contact"
       >Start your website project <span aria-hidden="true">↗</span></a
     >
+    <aside
+      class="music-player"
+      aria-label="Background music"
+      data-state="waiting"
+      hidden
+    >
+      <audio
+        id="studioMusic"
+        src="assets/audio/studio-deep-house.mp3"
+        loop
+        preload="none"
+      ></audio>
+      <button
+        class="music-toggle"
+        type="button"
+        aria-label="Play deep house"
+        aria-pressed="false"
+        aria-describedby="musicStatus"
+      >
+        <span class="music-play-icon" aria-hidden="true"></span>
+        <span class="music-label">DEEP HOUSE</span>
+        <span class="music-equalizer" aria-hidden="true"
+          ><i></i><i></i><i></i><i></i
+        ></span>
+      </button>
+      <details class="music-volume">
+        <summary aria-label="Adjust background music volume">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M11 5 6 9H3v6h3l5 4V5Z" />
+            <path d="M15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14" />
+          </svg>
+        </summary>
+        <div class="music-volume-panel">
+          <label for="musicVolume">Volume</label
+          ><input
+            id="musicVolume"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="25"
+          /><output for="musicVolume">25%</output>
+        </div>
+      </details>
+      <span class="sr-only" id="musicStatus" role="status"
+        >Preparing music.</span
+      >
+    </aside>
+    <script defer src="music.js"></script>
   </body>
 </html>
