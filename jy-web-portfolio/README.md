@@ -10,7 +10,7 @@
 python3 -m http.server 8000 --bind 0.0.0.0
 ```
 
-기존 정적 사이트 배포 구조와 문서 루트는 그대로 유지합니다. `index.html`, `style.css`, `script.js`, `assets`를 함께 배포하세요.
+기존 정적 사이트 배포 구조와 문서 루트는 그대로 유지합니다. `index.html`, `en.html`, `style.css`, `script.js`, `assets`를 함께 배포하세요.
 
 ## 콘텐츠 관리
 
@@ -38,3 +38,10 @@ git diff --check
 ```
 
 브라우저에서는 PC·태블릿·모바일의 가로 넘침, 이미지 로딩, 모바일 메뉴의 열기·닫기·Escape·키보드 탐색, 내부 링크, 모션 감소 설정을 확인합니다. JavaScript를 끄더라도 본문과 기본 문의 링크는 표시됩니다. IntersectionObserver 애니메이션은 모션 감소 설정에서 비활성화됩니다.
+
+## 언어 페이지
+
+- `index.html`: 한국어 / `en.html`: 영어. 동일한 CSS·JavaScript·이미지를 공유합니다.
+- 헤더의 `KO / EN` 링크로 전환합니다. JavaScript 사용 시 현재 섹션 주소도 유지합니다.
+- 영어 페이지는 별도의 정적 HTML이라 외부 번역 서비스 없이 열리고, JavaScript를 끈 경우에도 영어 콘텐츠를 제공합니다.
+- 콘텐츠를 갱신할 때는 한국어·영어의 대응 내용, 페이지별 메타데이터·이미지 설명·메뉴 접근성 문구를 함께 확인하세요.

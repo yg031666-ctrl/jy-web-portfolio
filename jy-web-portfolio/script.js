@@ -6,17 +6,29 @@ const sections = [...document.querySelectorAll("main > section[id]")];
 const progress = document.querySelector(".scroll-progress");
 const mobile = window.matchMedia("(max-width: 820px)");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const english = document.documentElement.lang === "en";
+const menuLabels = english
+  ? { open: "Open menu", close: "Close menu" }
+  : { open: "메뉴 열기", close: "메뉴 닫기" };
+
+document.querySelectorAll(".language-switch a").forEach((link) => {
+  link.addEventListener("click", () => {
+    const destination = new URL(link.href);
+    destination.hash = window.location.hash;
+    link.href = destination.href;
+  });
+});
 
 function closeMenu(returnFocus = false) {
   menu.hidden = true;
   toggle.setAttribute("aria-expanded", "false");
-  toggle.setAttribute("aria-label", "메뉴 열기");
+  toggle.setAttribute("aria-label", menuLabels.open);
   if (returnFocus) toggle.focus();
 }
 toggle.addEventListener("click", () => {
   const open = toggle.getAttribute("aria-expanded") !== "true";
   toggle.setAttribute("aria-expanded", String(open));
-  toggle.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+  toggle.setAttribute("aria-label", open ? menuLabels.close : menuLabels.open);
   menu.hidden = !open;
 });
 menu.addEventListener("click", (event) => {

@@ -8,7 +8,7 @@
       name="description"
       content="기업 홈페이지, 브랜드 웹사이트, 쇼핑몰 제작을 위한 1인 웹디자인·개발 스튜디오. JY Studio의 프로젝트와 제작 과정을 확인하고 홈페이지 제작을 상담하세요."
     />
-    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="theme-color" content="#fff8fa" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
@@ -20,6 +20,11 @@
     />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="alternate" hreflang="ko" href="index.html" />
+    <link rel="alternate" hreflang="en" href="en.html" />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
@@ -38,6 +43,20 @@
         <a class="header-cta" href="#contact"
           >제작 문의 <span aria-hidden="true">↗</span></a
         >
+        <nav class="language-switch" aria-label="언어 선택">
+          <a
+            href="index.html"
+            lang="ko"
+            hreflang="ko"
+            aria-label="한국어 페이지"
+            aria-current="page"
+            >KO</a
+          >
+          <span aria-hidden="true">/</span>
+          <a href="en.html" lang="en" hreflang="en" aria-label="English page"
+            >EN</a
+          >
+        </nav>
         <button
           class="menu-toggle"
           type="button"
@@ -62,6 +81,15 @@
         </div>
         <div class="hero-inner">
           <div class="hero-copy reveal">
+            <span class="studio-flower" aria-hidden="true"
+              ><svg viewBox="0 0 100 100" fill="none">
+                <path
+                  d="M50 50C8 42 16 5 38 13C50 17 50 35 50 50C58 8 95 16 87 38C83 50 65 50 50 50C92 58 84 95 62 87C50 83 50 65 50 50C42 92 5 84 13 62C17 50 35 50 50 50Z"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                />
+                <circle cx="50" cy="50" r="5" fill="currentColor" /></svg
+            ></span>
             <p class="eyebrow">브랜드를 위한 웹디자인 · 홈페이지 제작</p>
             <h1 id="hero-title">
               당신의 브랜드가<br />더 <em>돋보이도록.</em>
@@ -245,20 +273,11 @@
           </div>
           <div class="about-copy reveal">
             <p class="eyebrow">02 — THE STUDIO</p>
-            <h2 id="about-title">작은 스튜디오의<br /><em>세심한 시선.</em></h2>
-            <p class="intro">
-              기획의 의도를 디자인에 담고,<br />디자인의 디테일을 웹으로
-              완성합니다.
-            </p>
+            <h2 id="about-title">브랜드를 담는<br /><em>섬세한 디자인.</em></h2>
+            <p class="intro">디자인부터 웹 구현까지, 세심하게.</p>
             <p>
-              JY Studio는 웹디자이너·웹 퍼블리셔 서지영의 1인 스튜디오입니다.
-              브랜드의 성격과 콘텐츠의 우선순위를 살피고, 목적에 맞는 정보
-              구조와 반응형 화면을 설계합니다.
-            </p>
-            <p>
-              기업 홈페이지부터 브랜드 웹사이트까지. 보기 좋은 첫인상과 편안한
-              사용 경험을 함께 고민하며, 필요한 제작 범위와 진행 방식을 명확하게
-              소통합니다.
+              서지영의 1인 웹스튜디오 JY Studio입니다. 브랜드에 맞는 디자인과
+              반응형 웹사이트를 만듭니다.
             </p>
             <dl class="studio-details">
               <div>
@@ -621,6 +640,15 @@
             <span>YOUR NEXT CHAPTER, ONLINE.</span>
           </div>
           <div class="contact-inner reveal">
+            <span class="studio-flower" aria-hidden="true"
+              ><svg viewBox="0 0 100 100" fill="none">
+                <path
+                  d="M50 50C8 42 16 5 38 13C50 17 50 35 50 50C58 8 95 16 87 38C83 50 65 50 50 50C92 58 84 95 62 87C50 83 50 65 50 50C42 92 5 84 13 62C17 50 35 50 50 50Z"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                />
+                <circle cx="50" cy="50" r="5" fill="currentColor" /></svg
+            ></span>
             <h2 id="contact-title">
               당신의 아이디어를<br />웹사이트로 <em>완성해 보세요.</em>
             </h2>
@@ -653,8 +681,8 @@
               </a>
             </div>
             <p id="kakao-note" class="contact-note">
-              PC에서는 채널을 확인하거나 이메일로 문의해 주세요.
-              모바일에서는 카카오톡 채팅으로 연결됩니다.
+              PC에서는 채널을 확인하거나 이메일로 문의해 주세요. 모바일에서는
+              카카오톡 채팅으로 연결됩니다.
             </p>
             <a class="contact-email" href="mailto:yg03166@naver.com"
               >yg03166@naver.com</a
